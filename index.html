@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS LINK PAGE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- END OF CSS PAGE -->
+
+    <title>ShareBit</title>
+</head>
+<body>
+    <section class="update-container">
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="./image/file.svg" alt="upload icon" draggable="false" class="middle">
+                <img src="./image/file.svg" alt="upload icon" draggable="false" class="right">
+                <img src="./image/file.svg" alt="upload icon" draggable="false" class="left">
+            </div>
+            <input type="file" id="fileinput">
+            <div class="title">Drop your file here or, <span class="browseBtn">browse</span></div>
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+            <div class="inner-container">
+                <div class="title">Uploading...</div>
+                <div class="percent-container"><span id="percent">0</span>%</div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="sharing-container">
+            <p class="expire">Link expires in 24 Hrs</p>
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly value="https://www.linkedin.com/in/rahul-banik-8b06aab0/">
+                <img src="./image/copy-icon.svg" alt="Copy Icon">
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="/script.js"></script>
+</html>
